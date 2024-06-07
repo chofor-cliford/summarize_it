@@ -21,7 +21,7 @@ const CustomForm = () => {
         height={10}
         className="absolute left-0 my-2 ml-3 w-5"
       />
-      <input
+      <Input
         type="url"
         placeholder="Enter a URL"
         onChange={() => {}}
@@ -29,16 +29,14 @@ const CustomForm = () => {
         className="url_input peer"
       />
 
-      <button
+      <Button
         type="submit"
-        className="submit_btn peer-focus:border-green-700 peer-focus:text-green-700"
+        className="submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700"
       >
         <CornerDownLeft
-        color="gray"
-        className="peer-focus:text-green-700 peer-focus:border-green-700 !important"
           size={10}
         />
-      </button>
+      </Button>
     </form>
   );
 }
