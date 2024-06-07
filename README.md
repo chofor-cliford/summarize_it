@@ -7,6 +7,7 @@
   </div>
 
   <h3 align="center">An AI Article Summarizer Website</h3>
+  </div>
 
 
 ## 📖 <a name="table">Table of Contents</a>
