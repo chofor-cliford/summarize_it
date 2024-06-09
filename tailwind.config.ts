@@ -31,6 +31,7 @@ const config = {
         "satoshi-black-italic": ["Satoshi-BlackItalic", "sans-serif"],
         "satoshi-variable": ["Satoshi-Variable", "sans-serif"],
         "satoshi-variable-italic": ["Satoshi-VariableItalic", "sans-serif"],
+        inter: "var(--font-inter)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

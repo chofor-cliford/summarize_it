@@ -23,3 +23,7 @@ declare type DisplayLinkProps = {
   data: ArticleProps;
   setArticle: React.Dispatch<React.SetStateAction<ArticleProps>>;
 }
+
+declare type DisplaySummaryProps = {
+  summary: string;
+}

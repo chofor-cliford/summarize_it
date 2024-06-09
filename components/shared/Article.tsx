@@ -7,6 +7,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { getSummary } from "@/lib/actions/article.actions";
 import { isValidUrl } from "@/lib/utils";
 import DisplayLink from "./DisplayLink";
+import loader from "@/assets/loader.svg";
+import DisplaySummary from "./DisplaySummary";
 
 const Article = () => {
   const [article, setArticle] = useState({ url: "", summary: "" });
@@ -46,7 +48,7 @@ const Article = () => {
       setAllArticles(updatedAllArticles);
 
       localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
-      console.log(allArticles);
+      console.log(newArticle);
       localStorage.clear();
     }
   };
@@ -95,6 +97,23 @@ const Article = () => {
             setArticle={setArticle}
           />
         ))}
+      </div>
+
+      <div className="my-10 max-w-full flex justify-center items-center">
+        {isFetching ? (
+          <Image
+            src="/assets/loader.svg"
+            alt="loader"
+            width={80}
+            height={80}
+            className="object-contain cursor-pointer"
+          />
+        ) : error ? (
+          <p className="font-inter font-bold text-black text-center">
+            Well, that wasn&apos;t supposed to happen. Please try again.
+            <span className="font-satoshi-regular text-gray-700">{error}</span>
+          </p>
+        ) : article.summary && <DisplaySummary summary={article.summary} />}
       </div>
     </div>
   );

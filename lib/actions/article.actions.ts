@@ -19,7 +19,7 @@ export const getSummary = createAsyncThunk("article/getSummary", async (url: str
     const response = await fetch(query, options);
     const result = await response.text();
    
-    return result;
+    return JSON.parse(result);
   } catch (error) {
     console.error(error);
   }
@@ -31,7 +31,7 @@ const initialState: InitialStateProps = {
     summary: ""
   },
   error: null,
-  isFetching: true,
+  isFetching: false,
 };
 
 const articleSlice = createSlice({
@@ -47,7 +47,7 @@ const articleSlice = createSlice({
       })
       .addCase(getSummary.fulfilled, (state, action) => {
         state.isFetching = false;
-        state.data.summary = action.payload;
+        state.data.summary = action.payload.summary;
       })
       .addCase(getSummary.rejected, (state) => {
         state.isFetching = false;
