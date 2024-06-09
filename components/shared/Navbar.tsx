@@ -11,7 +11,7 @@ const Navbar = () => {
         alt="logo"
         width={112}
         height={112}
-        className="object-contain cursor-pointer"
+        className="object-contain cursor-pointer w-auto h-auto"
       />
 
       <Button
