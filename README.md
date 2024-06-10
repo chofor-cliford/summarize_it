@@ -1,8 +1,10 @@
 <div align="center">
 
- <br />
-      <img src="https://github.com/chofor-cliford/summarize_it/blob/master/public/assets/favicon.ico" alt="Project Banner">
-    </a>
+  <img src="https://raw.githubusercontent.com/chofor-cliford/summarize_it/master/public/assets/favicon.ico" alt="Project Banner" width="150" height="150" />
+
+<h2 align="center"><strong>Summarize It!</strong></h2>
+
+
   <br />
 
   <div>
@@ -12,9 +14,7 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-  <h3 align="center">An AI Article Summarizer Website</h3>
   </div>
-
 
 ## 📖 <a name="table">Table of Contents</a>
 
@@ -22,7 +22,6 @@
 2. 💻 [Technologies](#tech)
 3. ❇️ [Features](#features)
 4. 👨‍💻 [Quick Start](#quick-start)
-
 
 ## <a name="introduction">✏️ Introduction</a>
 
@@ -47,7 +46,7 @@ Summarize any kind of article with just one click using the powerful OpenAI mode
 
 ✔️ **Advanced RTK Query API Requests**: Utilizes the advanced capabilities of Redux Toolkit (RTK) Query for making API requests. These requests fire conditionally based on specific criteria, optimizing data fetching and management.
 
-and many more, including code architecture and reusability 
+and many more, including code architecture and reusability
 
 ## <a name="quick-start">👨‍💻 Quick Start</a>
 
