@@ -62,8 +62,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/project_ai_summarizer.git
-cd project_ai_summarizer
+git clone https://github.com/chofor-cliford/summarize_it.git
+cd summarize_it
 ```
 
 **Installation**
