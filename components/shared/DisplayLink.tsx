@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import copy from '@/assets/copy.svg'
-import tick from '@/assets/tick.svg'
 
 const DisplayLink = ({data, setArticle}:DisplayLinkProps) => {
   const [copied, setCopied] = useState <string | Boolean>("");
