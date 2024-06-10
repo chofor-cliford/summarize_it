@@ -14,8 +14,8 @@ const DisplayLink = ({data, setArticle}:DisplayLinkProps) => {
   return (
     <div onClick={() => setArticle(data)} className="link_card">
       <div className="copy_btn">
-        <Image
-          src={copied === data.url ? tick : copy}
+       <Image
+          src={copied === data.url ? "/assets/tick.svg" : "/assets/copy.svg"}
           alt={copied === data.url ? "tick_icon" : "copy_icon"}
           width={12}
           height={12}
