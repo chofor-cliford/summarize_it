@@ -1,8 +1,6 @@
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/chofor-cliford/summarize_it/update-ui/logic/public/assets/favicon.svg" alt="Project Banner" width="150" height="150" />
-<h2 align="center"><strong>Summarize It!</strong></h2>
-
+  <img src="https://raw.githubusercontent.com/chofor-cliford/summarize_it/master/public/assets/favicon.ico" alt="Project Banner" width="150" height="150" />
+  <h2 align="center"><strong>Summarize It!</strong></h2>
   <br />
 
   <div>
