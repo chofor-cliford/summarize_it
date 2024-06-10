@@ -1,4 +1,10 @@
 <div align="center">
+
+ <br />
+      <img src="https://github.com/chofor-cliford/summarize_it/blob/master/public/assets/favicon.ico" alt="Project Banner">
+    </a>
+  <br />
+
   <div>
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />

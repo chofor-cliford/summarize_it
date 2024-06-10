@@ -7,7 +7,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { getSummary } from "@/lib/actions/article.actions";
 import { isValidUrl } from "@/lib/utils";
 import DisplayLink from "./DisplayLink";
-import loader from "@/assets/loader.svg";
 import DisplaySummary from "./DisplaySummary";
 
 const Article = () => {
@@ -15,8 +14,8 @@ const Article = () => {
   const [allArticles, setAllArticles] = useState<ArticleProps[]>([]);
 
   const dispatch = useDispatch<any>();
-
   const data = useSelector((state: InitialStateProps) => state.data);
+
   const isFetching = useSelector(
     (state: InitialStateProps) => state.isFetching
   );
@@ -30,11 +29,10 @@ const Article = () => {
     if (articlesFromLocalStorage) {
       setAllArticles(articlesFromLocalStorage);
     }
-  }, []);
+  }, [article.summary]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // if (e.key === "Enter") {
 
     if (isValidUrl(article.url)) {
       dispatch(getSummary(article.url));
@@ -48,8 +46,8 @@ const Article = () => {
       setAllArticles(updatedAllArticles);
 
       localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
-      console.log(newArticle);
-      localStorage.clear();
+      console.log("article", allArticles);
+      setArticle({...article, url: ""})
     }
   };
 
@@ -113,7 +111,11 @@ const Article = () => {
             Well, that wasn&apos;t supposed to happen. Please try again.
             <span className="font-satoshi-regular text-gray-700">{error}</span>
           </p>
-        ) : article.summary && <DisplaySummary summary={article.summary} />}
+        ) : (
+          allArticles[0]?.summary && (
+            <DisplaySummary summary={allArticles[0]?.summary} />
+          )
+        )}
       </div>
     </div>
   );

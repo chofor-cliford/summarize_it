@@ -16,7 +16,9 @@ const Navbar = () => {
 
       <Button
         type="button"
-        onClick={() => window.open("https://github.com/chofor-cliford/horizon")}
+        onClick={() =>
+          window.open("https://github.com/chofor-cliford/summarize_it")
+        }
         className="black_btn"
       >
         GitHub
